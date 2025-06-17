@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS selector</title>
+        <style>
+            h1, h3 {
+                color: red;
+            }
+
+            .subTitle {
+                background-color: yellow;
+            }
+
+            .card {
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 300;
+            }
+
+            #subsubTitle {
+                color: burlywood;
+            }
+
+            td {
+                border: 1px solid black
+            }
+
+            input[type="text"] {
+                background-color: aqua;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            div > p {
+                color:green
+            }
+        </style>
+    </head>
+
+    <body>
+            <h1>CSS selector</h1>
+            <h2 class="subTitle">CSS selector</h2>
+            <h3 id="subsubTitle">CSS selector</h3>
+            <h4>CSS selector</h4>
+            <h5 class="subTitle">CSS selector</h5>
+            <h6 id="subsubTitle">CSS selector</h6>
+
+            <div class="card">
+                <p>This is inner card.</p>
+            </div>
+
+            <div class="card">
+                <p>This is second inner card.</p>
+            </div>
+
+            <div class="card">
+                <P>This is table example</P>
+                <form>
+                    <p>this is tavle example.</p>
+                    <p>this is tavle example.</p>
+                    <p>this is tavle example.</p>
+                    <p>this is tavle example.</p>
+                    <p>this is tavle example.</p>
+                </form>
+            </div>
+
+            <div class="card">
+                <p>This is table example.</p>
+                <table style="width: 500px; border: 1px solid green;">
+                    <tr>
+                        <td style="width :100px">Name:</td>
+                        <td style="width: 400px;">
+                            <input type="text" name="name" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>E_mail:</td>
+                        <td>
+                            <input type="text" name="email" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Message:</td>
+                        <td>
+                            <textarea name="message" rows="8"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="cardButton">Submit</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+    </body>
+</html>
