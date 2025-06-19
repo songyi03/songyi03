@@ -98,3 +98,15 @@ body {
     right: -60px;
  
 }
+
+.mouth {
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 130px;
+    left: 38%;
+    z-index: 100;
+
+}
