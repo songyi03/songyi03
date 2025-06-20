@@ -22,7 +22,7 @@
 <p>
 <ul>
 <li>사용자가 웹사이트를 보는 공간</li>
-<li>HMTL, CSS, JS로 만들어져 이음</li>
+<li>HMTL, CSS, JS로 만들어져 있음</li>
 </ul>
 </p>
 
