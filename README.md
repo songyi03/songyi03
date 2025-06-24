@@ -1,19 +1,30 @@
-## Hi there 👋
-### My name is SONG YI.
+## 안녕하세요! 👋
+### 김송이입니다.
 
-> Today's weather is warm.
+> 프론트엔드 개발자 및 벡엔드 개발자 그리고 클라우드 및 소프트웨어 아키텍트가 되고 싶습니다. 
 
-<!--
-**songyi03/songyi03** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 기술 스택
+### 언어
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Here are some ideas to get you started:
+### 프레임워크
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📊 GitHub 스탯탯
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=songyi03&show_icons=true&theme=radical)
+
+
+### 많이 사용한 언어
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=songyi03&layout=compact&theme=radical)
+
+### 연속 커밋
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=songyi03&theme=radical)
+
+
+| 기술       | 수준       | 경험 |
+| ---------- | ---------- | ---- |
+| JavaScript | ⭐         | 0년  |
+| React      | ⭐         | 0년  |
