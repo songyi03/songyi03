@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0" />
+        <title>배열 예제</title>
+        <style></style>
+    </head>
+    <body>
+        <script>
+            // let fruits = ["사과","바나나","딸기"]
+            // console.log(fruits[0]);
+            // console.log(fruits.length);
+
+            // fruits.push("포도");
+            // console.log(fruits.length);
+
+            // fruits[fruits.length]="키위";
+            // console.log(fruits.length);
+
+            // fruits[5] = "레몬"
+            // console.log(fruits.length);
+
+            // console.log(fruits);
+
+            // let items = ["여권", "칫솔", "수건"];
+
+            // items.push("충전기");
+            // items.splice(1,1, "세면도구");
+            // console.log(items);
+
+            // // alert("여행 준비물 목록:" + items.join(","));
+            // console.log(items.pop());
+            // console.log(items);
+
+            // let animals = ["강아지","고양이","토끼"];
+            // animals.push("사자");
+
+            // for (let i = 0; i < animals.length; i++) {
+            //     console.log(animals[i]);
+            // }
+
+            // for (let animal of animals) {
+            //     console.log(animal);
+            // }
+
+            // animals.forEach(function (animal) {
+            //     console.log(animal);
+            // });
+     
+// // do-while 예제
+//             let i = 0;
+//             do {
+//                 console.log(i);
+//                 i++;
+
+//             }   while ( i <5 );         
+            
+
+//좋아하는 음식 5개로 배열만들고 join()으로 한 줄 출력
+            food = ["치킨","소고기","꿔바로우","피자", "마라샹궈"]
+            console.log(food.join());
+
+// 배열에서 특정 요소를 삭제하고 새 요후 추가 (splice() 사용)
+            food =  ["치킨","소고기","꿔바로우","피자", "마라샹궈"]
+            food.splice(1,1, "지삼선"); //(1-삭제하려는 위치, 1- 삭제할 개수, "지삼선"-그 자리에 추가할 것)
+            console.log(food);
+         
+//정수 n이 매개 변수로 주어집니다. n 줄에 걸쳐 별 (*)을 한줄에 하나씩 늘려서 출력하는 함수를 작성하세요. 출력예시는 console.log글 사용합니다. 
+//제한사항 1 <= n <= 100 , console.log()를 사용하여 한줄씩 출력    
+            function printstars(n) {
+                for (let i = 1; i <= n; i++) {
+                    console.log("*".repeat(i));
+                }
+            }
+            printstars(5);
+
+            function printRightStars(n) {
+            for (let i = 1; i <= n; i++) {
+             console.log(" ".repeat(n - i) + "*".repeat(i));
+                }
+            }
+            printRightStars(5);
+
+            function printPyramid(n) {
+             for (let i = 1; i <= n; i++) {
+              let spaces = " ".repeat(n - i);          // 왼쪽 공백
+              let stars = "*".repeat(2 * i - 1);       // 별 갯수
+              console.log(spaces + stars);             // 합쳐서 출력
+                }
+            }
+            printPyramid(5);
+        
+</script>
+     </body>
+    </html>
