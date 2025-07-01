@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>클릭 카운터</title>
+        <style>
+            /*간단한 스타일*/
+
+        </style>
+    </head>
+    <body>
+        <!-- 버튼을 누르면 숫자가 올라감 -->
+        <button id="btn">눌러봐!</button>
+
+        <!-- 숫자를 보여주는 부분 -->
+         <p id="counter">0</p>
+
+         <!-- 특정 조건(10번 클릭 시) 메세지 출력 -->
+          <p id = "message"></p>
+
+    <script>
+        //클릭 횟수를 저장할 변수 선언
+         let count = 0;
+
+         //버튼 요소를 가져오기
+         const button =document.getElementById("btn");
+
+         //버튼에 클릭 이벤트 달기 
+         button.addEventListener("click", function() {
+            count++; //클릭할때마다 1씩 증가
+
+            document.getElementById("counter").innerText = count;
+            //counter 아이디르 ㄹ가진 p 태그 안에 count 값 넣어주기
+
+            //만약 10번 이상 클릭 했다면 메세지 띄우기 
+            if (count >=10) {
+                document.getElementById("message").innerText = "그만 좀 눌러!";
+            }
+         });
+    </script>
+
+
+    </body>
+</html>
