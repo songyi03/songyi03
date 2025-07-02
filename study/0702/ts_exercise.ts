@@ -45,3 +45,13 @@ function add3 (a: number, b:number): number {
 
 //문제 4. 배열 타입
 let scores: number[] = [80, 90, 100];
+
+//문제 5. 객체 타입 정의
+let Person3: {name: string; age: number} = {
+    name: "Sue",
+    age: 30
+};
+
+//문제 6. 유니언 타입
+let id: number | string;
+id = "user 123";
