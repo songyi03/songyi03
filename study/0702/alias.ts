@@ -2,7 +2,7 @@ type Points = 20 | 30 | 40 | 50; //별칭 alis 라고 함
 let score: Points = 40;
 // let score2: 20 | 30 | 40 | 50 = 40; // 이렇게 쓰면 유지보수에 어렵다 alis 가 늘어날 경우에에
 let score2: Points = 40;
-let scroe3: Points = 40;
+let score3: Points = 40;
 let score4: Points = 40; 
 
 console.log(score);
