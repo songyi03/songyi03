@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My test page</title>
+    </head>
+    <body>
+        <h1>My main title</h1>
+        <h2>My top level heading</h2>
+        <h3>My subheading</h3>
+        <h4>My sub-subheading</h4>
+
+        <img src="https://img.marieclairekorea.com/2021/11/mck_618e16cdceaed-scaled.jpg" alt ="My test image" width="150" height="200"/>
+<!-- 너무 크게 나오지 않게 하려면 width와 height 값 정해주기! -->
+        <p>This is a single paragraph</p>
+
+        <ul>
+            <li>technologists</li>
+            <li>thinkers</li>
+            <li>builders</li>
+        </ul>
+
+        <a href="https://www.naver.com/">NAVER</a>
+
+        <tagname>content</tagname> 
+        <!-- tagname이라는건 없다.. 왜 예시엔 있는거지?ㅋㅋㅋ -->
+
+        <h2>제목입니다.</h2>
+        <p>이것은 문단입니다.</p>
+        <blockquote>여기에 인용문을 작성합니다.</blockquote>
+        <p>이 <strong>문장</strong>은 <em>강조</em>되어 있습니다.</p>
+        <ul>
+            <li>사과</li>
+            <li>바나나</li>
+        </ul>
+
+        <ol>
+            <li>HTML 배우기</li>
+            <li>CSS 배우기</li>
+        </ol>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>웹 페이지를 구성하는 마크업 언어</dd>
+          
+            <dt>CSS</dt>
+            <dd>HTML을 예쁘게 꾸며주는 스타일 언어</dd>
+          
+            <dt>JavaScript</dt>
+            <dd>웹 페이지를 동작하게 만들어주는 프로그래밍 언어</dd>
+          </dl>
+          <!-- dl(설명목록 definition list) 태그 사용방법 -->
+
+        <table>
+            <caption>학생 점수표</caption>
+            <tr>
+                <th>이름</th>
+                <th>점수</th>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>임꺽정</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>이몽룡</td>
+                <td>77</td>
+            </tr>
+        </table>
+        <!-- tr은 가로행이고, th는 세로 헤더 셀(굴고 중앙 정렬), td는 세로 일반 셀이다.  -->
+       
+        <a href ="https://www.naver.com">
+            <img src="https://mblogthumb-phinf.pstatic.net/MjAyMjEyMTVfMTg4/MDAxNjcxMDkwNTc1ODM5.72xNKr7Hvw77FSfnoIFYYCoRneDoxXIH5jqXXA3T5v8g.5rfVNPZ9_DVsOO4sDPenHZ7L_e6kYh1SHUkzqRjjnL4g.PNG.y2kwooga/%EB%84%A4%EC%9D%B4%EB%B2%84_AI-18.png?type=w800" alt="배너">
+        </a>
+
+        <br />
+        <h2>원형</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" fill="orange" />
+        </svg>
+
+        <h2>사각형</h2>
+        <svg width="200" height="100">
+            <rect x="10" width="100" height="50"
+            fill="skyblue" stroke="black" stroke-width="2" />
+        </svg>
+        <!-- 📌 의미:
+
+x, y: 시작 좌표 (왼쪽 위)
+
+width, height: 너비/높이
+
+fill: 내부 색
+
+stroke: 테두리 색 -->
+
+        <h2>선</h2>
+        <svg width="200" height="100">
+            <line x1="10" y1="10" x2="150" y2="80"
+                stroke="blue" stroke-widht="3" />
+        </svg>
+        <!-- 📌 의미:
+
+x1, y1: 시작점
+
+x2, y2: 끝점
+
+stroke: 선 색깔
+
+stroke-width: 선 두께 -->
+
+        <h2>경로</h2>
+        <svg width="200" height="150">
+            <path d="M 10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"
+            fill="none" stroke="red" stroke-width="2" />
+        </svg>
+        <!-- 📌 path는 약간 복잡하지만 무한한 자유로움을 줌 😎
+
+d="..."는 좌표 + 경로 명령어를 조합한 코드
+
+M: move (이동)
+
+C: cubic Bezier curve (곡선!)
+
+S: smooth curve
+
+👉 path는 펜툴처럼 복잡한 곡선, 아이콘, 하트, 파도 그릴 때 씀 -->
+
+        <h2>SVG 하트</h2>
+
+        <svg width="200" height="200" viewBox="0 0 100 100">
+        <path d="M10,30
+                A20,20 0 0,1 50,30
+                A20,20 0 0,1 90,30
+                Q90,60 50,90
+                Q10,60 10,30 Z"
+                fill="pink" stroke="red" stroke-width="2"/>
+        </svg>
+        <!-- M10,30
+        → M = MoveTo
+          시작점을 (10,30)으로 이동함. 하트의 왼쪽 꼭짓점 시작점.
+        
+        A20,20 0 0,1 50,30
+        → A = Arc (타원형 곡선)
+          반지름 20,20짜리 곡선을 시계방향으로 (50,30)까지 그림.
+          하트의 왼쪽 곡선 부분을 만듦.
+        
+        A20,20 0 0,1 90,30
+        → 오른쪽으로 이어지는 같은 곡선을 그림.
+          하트의 오른쪽 곡선 부분.
+        
+        Q90,60 50,90
+        → Q = Quadratic Bézier Curve (2차 곡선)
+          제어점 (90,60)을 지나 (50,90)까지 곡선을 그림.
+          하트의 오른쪽 아래 뾰족한 부분을 향해 꺾이는 곡선.
+        
+        Q10,60 10,30
+        → 왼쪽 아래로 되돌아오는 부드러운 곡선을 그림.
+          제어점 (10,60)을 지나 다시 시작점 (10,30)으로.
+        
+        Z
+        → Z = Close Path
+          선을 닫아줌. 즉, 시작점과 마지막 점을 연결해서 도형 완성. -->
+
+          <h2>이미지 맵으로 이벤트 페이지 만들기</h2>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTleUGYjj5PCuYD9yZGsYQ5AGNEublypwQsng&s" usemap="#asiamap" width="400">
+          <map name="asiamap">
+            <area shape="rect" coords="50,50,150,150" href="https://www.naver.com" alt="korea">
+            <area shape="circle" coords="300,200,30" href="https://www.google.com" alt="usa">
+          </map>
+
+          <!-- HTML의 <area> 태그는 기본적으로 눈에 보이지 않아!
+
+네가 지정한 shape="rect"이나 shape="circle"은
+👉 "이 좌표를 클릭 가능하게 만든다"는 의미이지,
+**"눈에 띄는 도형을 그려준다"**는 뜻은 아니야 ❌ -->
+        
+
+    </body>
+</html>
+
+
+<!-- href 오타 조심!! href = Hypertext REFerence 👉 그러니까 "하이퍼링크 참조값"
+src도 맨날 오타남!! 이거 두개만 조심하자!! -->
