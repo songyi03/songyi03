@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Make Foam</title>
+    </head>
+    <body>
+        <h1>FOM Review</h1>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br />
+            <label for="name">Username:</label>
+            <input type="text" name="username" placeholder="Enter your username"><br />
+            <label for="name">Password:</label>
+            <input type="password" name="password" placeholder="Enter your password"><br />
+            <label for="name">E-mail:</label>
+            <input type="email" name="email" placeholder="Enter your email"><br/>
+            <label for="name">Age:</label>
+            <input type="number" name="age" min="0" max="100" placeholder="Enter your age" style="width: 120px;">
+            <!-- 🔍 "input 창이 너무 좁아서 Enter your age가 잘리네?? 이거 전부 보이게 하고 싶어!"
+
+→ 정답은 아주 간단해:
+size="25"을 추가하면 → 글자 입력창 너비가 넓어져서 안내문구가 잘 안 잘림!
+
+기본적으로 size는 “몇 글자 정도 들어갈지” 정하는 속성이야 -->
+<!-- type="text" 는 size="30" 잘 적용돼
+
+근데 type="number"는 브라우저마다 다르게 렌더링되고,
+→ size 속성 무시하거나 이상하게 적용돼 😤
+→ 그래서 placeholder가 잘리는 거야!!
+방법 1. style="width:..." 쓰기 (추천!!)
+width: 200px 정도면 placeholder 전체 보일 거야! -->
+
+            <br />
+            <label for="name">Subscribe:</label>
+            <label><input type="checkbox" name="subscribe">Subscribe to newsletter</label>
+            <br />
+            <label for="name">Gender:</label>
+            <label><input type="radio" name="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+            <br />
+            <label for="file">File upload:</label>
+            <input type="file" name="profile-picture"> <br />
+            <label for="date">Birthday:</label>
+            <input type="date" name="birthday"> <br />
+            <label for="range">Volume:</label>
+            <input type="range" name="volume" min="0" max="100"><br />
+
+            <label for="country">Select your country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="korea">Korea</option>
+            </select><br />
+
+            <label for="message">Your Message:</label><br />
+            <textarea id="message" name="message" rows="5" cols="50" placeholder="Enter your message here"></textarea>
+            <br />
+            <button type="submit">submit</button>
+
+           
+        </form>
+
+    </body>
+</html>
