@@ -19,10 +19,15 @@ const TodoList: React.FC = () => {
     <div>
       <h2>Todo List</h2>
       <div>
-        <input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="할 일을 입력하세요"
+      <input
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+            handleAdd(); // ⬅ 엔터 누르면 추가 함수 실행!
+            }
+        }}
+        placeholder="할 일을 입력하세요"
         />
         <button onClick={handleAdd}>추가</button>
         <button onClick={() => dispatch(clearTodos())}>전체 삭제</button>
