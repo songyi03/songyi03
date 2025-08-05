@@ -1,0 +1,28 @@
+@server = http://localhost:3000
+
+### 전체 person 목록 조회
+GET {{server}}/person
+
+### person 데이터 추가
+POST {{server}}/person
+Content-Type: application/json
+
+{
+  "name": "Andy Park",
+  "age": 30,
+  "email": "andy@backend.com"
+}
+
+### 특정 email로 person 조회
+GET {{server}}/person/andy@backend.com
+
+### 특정 email로 person 정보 수정
+PUT {{server}}/person/andy@backend.com
+Content-Type: application/json
+
+{
+  "age": 32
+}
+
+### 특정 email로 person 삭제
+DELETE {{server}}/person/andy@backend.com
